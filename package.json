@@ -1,0 +1,32 @@
+{
+  "name": "jquery-browserify-integration",
+  "version": "1.0.0",
+  "description": "shows how to integrate jquery, jquery-ui, and other plugins together using browserify",
+  "main": "configtest.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "coins-jquery-ui-utilities": "file:coins-jquery-ui-utilities",
+    "config": "^1.9.0",
+    "jquery": "^2.1.4",
+    "jquery-ui": "^1.10.5"
+  },
+  "devDependencies": {
+    "beefy": "^2.1.5",
+    "browserify": "^9.0.4"
+  },
+  "scripts": {
+    "demo": "beefy main.js",
+    "build": "browserify main.js -o bundle.js"
+  },
+  "author": "cdaringe",
+  "license": "MIT",
+  "keywords": [
+    "jquery",
+    "browserify",
+    "jquery-ui",
+    "integration",
+    "npm"
+  ]
+}
